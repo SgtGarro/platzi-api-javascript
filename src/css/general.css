@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2.4rem;
+}
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.icon svg {
+  width: inherit;
+  height: inherit;
+  stroke: inherit;
+}
