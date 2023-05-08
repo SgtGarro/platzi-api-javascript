@@ -26,13 +26,6 @@ const controlDetailMovie = async function (id) {
 const init = function () {
   TrendingView.addHandlerRender(controlTrendingMovies);
   TrendingView.addHandlerClickMovie(controlDetailMovie);
-  MovieDetailView.addHandlerClose(() => {
-    MovieDetailView.hideSection();
-  });
 };
 
 init();
-
-document.querySelector("button").addEventListener("click", () => {
-  MovieDetailView.showSection();
-});

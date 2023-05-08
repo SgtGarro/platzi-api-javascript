@@ -60,39 +60,30 @@
         <div class="container">
           <h2 class="trending-title">Trending</h2>
           <p class="trending-text">Most popular movies of this month</p>
-          <div class="trending-movies-container">
-            <div class="trending-movie">
-              <img
-                class="trending-movie-img"
-                src="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
-                alt=""
-              />
-            </div>
-            <div class="trending-movie">
-              <img
-                class="trending-movie-img"
-                src="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
-                alt=""
-              />
-            </div>
-            <div class="trending-movie">
-              <img
-                class="trending-movie-img"
-                src="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
-                alt=""
-              />
-            </div>
-            <div class="trending-movie">
-              <img
-                class="trending-movie-img"
-                src="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg"
-                alt=""
-              />
-            </div>
-          </div>
+          <div class="trending-movies-container"></div>
         </div>
       </section>
-      <section class="movie-detail-section"></section>
+      <section class="movie-detail-section">
+        <button class="movie-detail-close" type="submit">
+          <div class="icon icon--arrow-left icon--white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </div>
+        </button>
+        <div class="movie-detail-container"></div>
+      </section>
     </main>
     <script type="module" src="./src/js/controller.js"></script>
   </body>
