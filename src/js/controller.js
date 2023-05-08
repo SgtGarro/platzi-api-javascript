@@ -1,4 +1,5 @@
 import * as model from "./model.js";
+import MovieDetailView from "./view/MovieDetailView.js";
 import TrendingView from "./view/TrendingView.js";
 const controlTrendingMovies = async function () {
   try {
@@ -16,7 +17,7 @@ const controlDetailMovie = async function (id) {
     const movie = await model.getMovie(id);
 
     // 2) Show movie
-    console.log(movie);
+    MovieDetailView.renderMovie(movie);
   } catch (err) {
     console.error(err);
   }
@@ -25,6 +26,13 @@ const controlDetailMovie = async function (id) {
 const init = function () {
   TrendingView.addHandlerRender(controlTrendingMovies);
   TrendingView.addHandlerClickMovie(controlDetailMovie);
+  MovieDetailView.addHandlerClose(() => {
+    MovieDetailView.hideSection();
+  });
 };
 
 init();
+
+document.querySelector("button").addEventListener("click", () => {
+  MovieDetailView.showSection();
+});

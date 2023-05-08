@@ -79,5 +79,83 @@
 }
 
 /******************************************/
-/* Trending Section */
+/* Movie Detail Section */
 /******************************************/
+.movie-detail-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  transform: translateY(100%);
+  transition: all 0.3s ease-out;
+  overflow: auto;
+}
+
+.movie-detail-close {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+.icon--arrow-left {
+  fill: none;
+}
+
+.movie-detail-poster {
+  width: 100%;
+  height: 80%;
+}
+
+.movie-detail-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.movie-detail-container {
+  margin-top: -2.4rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 3.2rem;
+}
+.movie-detail-title {
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.25px;
+
+  margin-bottom: 0.8rem;
+}
+.movie-detail-rating {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0.8rem;
+}
+.movie-detail-rate {
+  margin-left: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+.icon--star {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--yellow);
+}
+.movie-detail-text {
+  color: var(--text-blue);
+  font-size: 1.3rem;
+}
