@@ -24,3 +24,16 @@ export const getMovie = async function (id) {
     throw err;
   }
 };
+
+export const getCategories = async function () {
+  try {
+    const res = await fetch(`${API_URL}/genre/movie/list?api_key=${API_KEY}`);
+    const data = await res.json();
+
+    const categories = data.genres;
+
+    return categories;
+  } catch (err) {
+    throw err;
+  }
+};
